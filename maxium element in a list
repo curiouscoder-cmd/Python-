@@ -1,0 +1,19 @@
+Find maximum element in a list
+def find_max(arr):
+    # Step 1: Initialize the maximum with the first element
+    max_element = arr[0]
+
+    # Step 2: Traverse the list
+    for num in arr:
+        # Step 3: Compare each element with the current maximum
+        if num > max_element:
+            max_element = num  # Update max_element if a larger number is found
+
+    # Step 4: Return the maximum value
+    return max_element
+
+# Example usage:
+numbers = [3, 5, 1, 8, 2, 9, 6]
+result = find_max(numbers)
+print("The maximum element is:", result)
+
